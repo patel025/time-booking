@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html {
+  scroll-behavior: smooth;
+} 
+ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif !important;
+    font-size: 13px;
+    color: #3a3a3a;
+    background-color: #dedede;
+    min-height: 100vh;
+}
+ 
+/*::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+} 
+ 
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 20px;
+}
+   
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clr,
+.clear {
+    clear: both;
+}
+
+header,
+footer,
+aside,
+article,
+section,
+detail,
+nav,
+figure {
+    position: relative;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none !important;
+    outline: none;
+}
+
+img {
+    border: 0;
+    outline: none;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea,
+input[type="button"] {
+    max-width: 100%;
+}
+
+table {  width: 100%; }
+p { margin: 0; padding: 0; }
+.fltL { float: left; }
+.fltR { float: right !important; }
+.padding_none { padding: 0 !important;}
+.border_none{border:none !important}
+.navbar-toggle {  background-color: #fff !important; }
+.icon-bar { background-color: #000 !important; }
+.p_right0{ padding-right:0px !important }
+.p_left0{ padding-left:0px !important } 
+input[type=date].form-control{ text-transform: uppercase !important; }
+select{cursor: pointer;outline: 0;}
+
+.Header{background-color:#fff;padding: 10px 0;}
+.Header .HeaderBox{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.Header .HeaderBox .Logo{width:auto}
+.Header .HeaderBox .Logo img{max-width: 135px;}
+.Header .HeaderBox .Navigation ul li{display:inline-block}
+.Header .HeaderBox .Navigation ul li a{background-color:#469bdb;padding: 10px 25px;color:#fff;font-size: 14px;font-weight:700;border-radius:50px;display:block}
+
+.ExperinceArea{padding:25px 0;background:#f1eeee}
+.ExperinceArea .ExperinceBox{max-width:1000px;margin:auto;box-shadow:0 0 10px #ddd}
+.ExperinceArea .ExperinceBox .ExperinceHead{background-color:#000;position:relative}
+.ExperinceArea .ExperinceBox .ExperinceHead img{opacity:.6;width:100%}
+.ExperinceArea .ExperinceBox .ExperinceHead figcaption{position:absolute;bottom:50px;width:100%;text-align:center;color:#fff}
+.ExperinceArea .ExperinceBox .ExperinceHead figcaption h3{font-size:50px;margin:0 0 70px 0;font-weight:700}
+.ExperinceArea .ExperinceBox .ExperinceHead figcaption a{background-color:#469bdb;padding:12px 26px;color:#fff;font-size:15px;font-weight:700;border-radius:7px;display:inline-block}
+.ExperinceArea .ExperinceBox .ExperinceBody{background-color:#fff;padding:25px}
+
+.PopularBox{margin:0 0 30px 0}
+.PopularBox h3{font-size:22px;color:#000;margin:0 0 20px 0}
+.PopularBox ul{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.PopularBox ul li{position:relative;border-radius: 10px;overflow: hidden;}
+.PopularBox ul li figure{background-color:#000}
+.PopularBox ul li figure img{width:100%;opacity:.7}
+.PopularBox ul li figcaption{position:absolute;width:100%;bottom:20px;text-align:center}
+.PopularBox ul li figcaption h6{font-size:20px;color:#fff}
+
+.AboutBox h3{font-size:22px;color:#000;margin:0 0 5px 0}
+.AboutBox h6{font-size:14px;color:#5e5e5e;margin:0 0 25px 0;line-height:24px;font-weight:600}
+.AboutBox article{display:flex;gap:15px;align-items:center}
+.AboutBox article figure{width:275px;background-color:#000}
+.AboutBox article figure img{opacity:.9}
+.AboutBox article figcaption{width:calc(100% - 290px)}
+.AboutBox article figcaption p{font-size:14px;color:#5e5e5e;margin:0 0 25px 0;line-height:24px;font-weight:600}
+
+.StyleArea{min-height:calc(100vh - 71px);display:flex;align-items:center;background:#f5f5f5;padding:50px 0}
+.StyleArea .StyleBox{max-width:1000px;margin:auto;display:flex;gap:30px;width:100%}
+.StyleArea .StyleBox .StyleLeft{background-color:#f9f9f9;padding:25px;box-shadow:0 0 10px #dddcdc;width:35%;border-radius:10px;border:3px solid #fff}
+.StyleArea .StyleBox .StyleLeft .Logo{text-align:center;margin:0 0 25px 0}
+.StyleArea .StyleBox .StyleLeft .Logo img{max-width:150px}
+.StyleArea .StyleBox .StyleLeft .Profile{text-align:center;margin:25px 0 0 0}
+.StyleArea .StyleBox .StyleLeft .Profile figure{width: 100px;height: 100px;border: 3px solid #fff;border-radius:50%;box-shadow:0 0 10px #c5c1c1;margin: 0 auto 10px;}
+.StyleArea .StyleBox .StyleLeft .Profile figure img{width:100%}
+.StyleArea .StyleBox .StyleLeft .Profile h4{font-size:20px;color:#469bdb}
+.StyleArea .StyleBox .StyleLeft ul{border-bottom:1px solid #ddd}
+.StyleArea .StyleBox .StyleLeft ul li{border-top:1px solid #ddd;padding:15px 0}
+.StyleArea .StyleBox .StyleLeft ul li h6{font-size:16px;color:#000}
+.StyleArea .StyleBox .StyleLeft ul li p{font-size:13px;font-weight:700;color:#707070;letter-spacing:.3px;line-height:21px}
+.StyleArea .StyleBox .StyleRight{background-color:#f1f1f1;padding:30px 30px 60px 30px;box-shadow:0 0 10px #d7d7d7;width:65%;border-radius:10px;border:3px solid #fff}
+
+.TitleBox{margin:0 0 35px 0}
+.TitleBox h3{font-size:35px;font-weight:800;margin:0 0 15px 0;color:#000}
+.TitleBox p{font-size:16px;font-weight:600;color:#545454}
+
+.Personal aside{margin:0 0 25px 0}
+.Personal aside input{box-shadow:none;border:2px solid #ddd;padding:13px 20px;height:auto;border-radius:5px;font-size:14px;color:#000;font-weight:700;width:100%;font-family:'Mulish';outline:0}
+.Personal button{background-color:#469bdb;padding:15px 0;color:#fff;font-size:16px;font-weight:600;border-radius:50px;display:block;border:none;width:250px;margin:auto;letter-spacing:.5px}
+.Personal h6{text-align:center;margin:20px 0 0 0;font-size:13px;color:#817d7d;letter-spacing:.4px}
+
+.Service ul{display:flex;gap:20px;font-family:'Mulish'}
+.Service ul li{width:100%;position:relative}
+.Service ul li input{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;cursor:pointer;opacity:0}
+.Service ul li article{background-color:#fff;text-align:center;padding:30px 20px;border-radius:15px;box-shadow:0 0 10px #ddd;border:2px solid #fff}
+.Service ul li article figure{width:150px;height:150px;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:0 0 10px #ddd;margin:0 auto 20px}
+.Service ul li article figure img{width:100%}
+.Service ul li article figcaption{min-height:125px}
+.Service ul li article figcaption h3{font-size:21px;text-transform:capitalize;font-weight:700;margin:0 0 20px 0;color:#3a3a3a}
+.Service ul li article figcaption h6{font-size:20px;color:#3a3a3a;font-weight:700;margin:0 0 10px 0}
+.Service ul li article figcaption p{font-size:13px;font-weight:700;color:#686767}
+.Service ul li article button{background-color:#469bdb;padding:10px 26px;color:#fff;font-size:14px;font-weight:700;border-radius:6px;border:none;font-family:'Mulish';letter-spacing:1px;text-transform:uppercase;transition:0.5s all ease-in-out}
+.Service ul li article button:before{left:9px;top:5px;width:5px;height:10px;border:solid #fff;border-width:0 3px 3px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);display:inline-block;margin:0 10px 0 0}
+.Service ul li input:checked~article{border-color:#469bdb}
+.Service ul li input:checked~article button:before{content:''}
+
+.Professional ul{display:flex;gap:20px;font-family:'Mulish'}
+.Professional ul li{width:100%;position:relative}
+.Professional ul li input{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;cursor:pointer;opacity:0}
+.Professional ul li article{background-color:#fff;text-align:center;padding:30px 20px;border-radius:15px;box-shadow:0 0 10px #ddd;border:2px solid #fff}
+.Professional ul li article .Icon{width:25px;height:25px;position:absolute;top:15px;right:15px;background:#469bdb;border-radius:50%;display:none}
+.Professional ul li article .Icon:before{content:'';left:9px;top:5px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);position:absolute}
+.Professional ul li article figure{width:100px;height:100px;border-radius:50%;overflow:hidden;border:3px solid #fff;box-shadow:0 0 10px #ddd;margin:0 auto 20px}
+.Professional ul li article figure img{width:100%}
+.Professional ul li article figcaption{min-height:75px}
+.Professional ul li article figcaption h3{font-size:21px;text-transform:capitalize;font-weight:700;margin:0 0 20px 0;color:#3a3a3a}
+.Professional ul li article figcaption h6{font-size:20px;color:#3a3a3a;font-weight:700;margin:0 0 10px 0}
+.Professional ul li article figcaption p{font-size:13px;font-weight:700;color:#686767}
+.Professional ul li article button{background-color:#469bdb;padding:10px 26px;color:#fff;font-size:14px;font-weight:700;border-radius:6px;border:none;font-family:'Mulish';letter-spacing:1px;text-transform:uppercase;transition:0.5s all ease-in-out}
+.Professional ul li input:checked~article{border-color:#469bdb}
+.Professional ul li input:checked~article .Icon{display:block}
+
+/*CalenderBox CSS is Extra */
+
+.CalenderBox{display:flex;gap:15px}
+.CalenderBox .CalenderLeft{width:60%;background-color:#fff;padding:20px;border-radius:10px;box-shadow:0 0 10px #ddd}
+.CalenderBox .CalenderLeft aside{display:flex;justify-content:space-between;align-items:center;margin:0 0 10px 0}
+.CalenderBox .CalenderLeft aside h6{color:#000;font-weight:700;font-size:16px}
+.CalenderBox .CalenderLeft aside i{font-size:22px;width:20px;height:20px;text-align:center;cursor:pointer}
+.CalenderBox .CalenderLeft ol{display:grid;grid-template-columns:repeat(7,1fr);text-align:center}
+.CalenderBox .CalenderLeft ol li{font-weight:700;color:#555;font-size:14px;padding:15px 0}
+.CalenderBox .CalenderLeft ul{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;gap:10px}
+.CalenderBox .CalenderLeft ul li{position:relative}
+.CalenderBox .CalenderLeft ul li input{position:absolute;left:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.CalenderBox .CalenderLeft ul li span{border-radius:50%;cursor:pointer;transition:0.2s;width:30px;height:30px;display:inline-block;font-size:14px;font-weight:600;line-height:30px}
+.CalenderBox .CalenderLeft ul li input:checked~span{background-color:#469bdb;color:#fff}
+.CalenderBox .CalenderLeft ul li.Disable span{color:#c5c0c0}
+.CalenderBox .CalenderLeft ul li.Color span{color:#fff;background-color:#469bdb}
+.CalenderBox .CalenderRight{width:40%}
+.CalenderBox .CalenderRight h6{margin:0 0 20px 0;color:#000;font-weight:700;font-size:16px}
+.CalenderBox .CalenderRight ul{display:grid;grid-template-columns:repeat(2,1fr);text-align:center;gap:15px 10px}
+.CalenderBox .CalenderRight ul li{position:relative}
+.CalenderBox .CalenderRight ul li input{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;cursor:pointer;opacity:0}
+.CalenderBox .CalenderRight ul li span{display:block;background-color:#dfd6d6;padding:9px 0;border-radius:50px;font-size:14px;font-weight:600;color:#000}
+.CalenderBox .CalenderRight ul li input:checked~span{background:#469bdb;color:#fff}
+.CalenderBox .CalenderRight ul li.Disable input{cursor:no-drop}
+.CalenderBox .CalenderRight ul li.Disable span{background:#dfdfdf}
+
+.Successfully span{display:block;max-width:200px;margin:auto}
+.Successfully h4{margin:30px 0 15px 0;font-size:18px;line-height:28px;color:#000}
+.Successfully p{font-size:15px;color:#5a5858;font-weight:600}
+
+.ContinueBox{margin:50px 0 0 0;text-align:center}
+.ContinueBox button{background-color:#469bdb;padding:15px 0;color:#fff;font-size:16px;font-weight:600;border-radius:50px;display:block;border:none;width:250px;margin:auto;letter-spacing:.5px;cursor:pointer}
+.ContinueBox a{padding: 11px 30px;background-color: #fff;color: #469bdb;font-size: 14px;font-weight: 700;border-radius: 50px;display: inline-block;letter-spacing: .5px;cursor: pointer;border: 2px solid #469bdb;margin: 20px 0 0 0;}
+.ContinueBox a:hover{ background-color:#469bdb; color:#fff }
+.ContinueBox h6{font-size:15px;margin:25px 0 0 0;color:#444;letter-spacing:.5px}

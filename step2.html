@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Pay</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+    <header>
+        <div class="Header">
+            <div class="HeaderBox">
+                <div class="Logo">
+                    <img src="images/Logo.png">
+                </div>
+                <div class="Navigation">
+                    <ul>
+                        <li></li>
+                        <li><a href="step1.html">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="StyleArea">
+            <div class="StyleBox">
+                <div class="StyleLeft">
+                    <div class="Logo">
+                        <img src="images/Logo.png">
+                    </div>
+                    <ul>
+                        <li>
+                            <h6>Your Booking</h6>
+                        </li>
+                        <li>
+                            <h6>Bread Trim & Shape</h6>
+                            <p>Kr 350</p>
+                            <p>60 Minutes</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="StyleRight">
+                    <div class="TitleBox">
+                        <h3>Choose Your Professional</h3>
+                        <p>Skip staff selection</p>
+                    </div>
+                    <div class="Professional">
+                        <ul>
+                            <li>
+                                <input type="radio" name="service">
+                                <article>
+                                    <span class="Icon"></span>
+                                    <figure>
+                                        <img src="images/Avatar-1.png">
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Emily</h3>
+                                    </figcaption>
+                                    <button>Select</button>
+                                </article>
+                            </li>
+                            <li>
+                                <input type="radio" name="service">
+                                <article>
+                                    <span class="Icon"></span>
+                                    <figure>
+                                        <img src="images/Avatar-2.png">
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Michael</h3>
+                                    </figcaption>
+                                    <button>Select</button>
+                                </article>
+                            </li>
+                            <li>
+                                <input type="radio" name="service">
+                                <article>
+                                    <span class="Icon"></span>
+                                    <figure>
+                                        <img src="images/Avatar-3.png">
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Jessica</h3>
+                                    </figcaption>
+                                    <button>Select</button>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ContinueBox">
+                        <button id="myButton">Continue</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script type="text/javascript">
+        $('#myButton').click(function() {
+            window.location.href = 'step3.html';
+            return false;
+        });
+    </script>
+
+</body>
+</html>
