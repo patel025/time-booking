@@ -13,14 +13,28 @@
     <header>
         <div class="Header">
             <div class="HeaderBox">
-                <div class="Logo">
-                    <img src="images/Logo.png">
+                <div class="HeaderLeft">
+                    <figure>
+                        <img src="https://foodciti-image.s3.amazonaws.com/foodciti-image-1586547974984PHOTO-2020-04-10-19-41-17.jpg">
+                    </figure>
+                    <figcaption>
+                        <h3>Efes Kebab House</h3> 
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> 36 Northgate, CT1 1BL  </p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> 01227766966 </p>
+                    </figcaption>
                 </div>
-                <div class="Navigation">
+                <div class="HeaderRight">
+                    <!-- <h4>Opening Time</h4> -->
                     <ul>
-                        <li></li>
-                        <li><a href="step1.html">Book Now</a></li>
+                        <li><label>Monday </label> <span> 15:00 - 02:30 </span></li>
+                        <li><label>Tuesday </label> <span> 15:00 - 02:30 </span></li>
+                        <li><label>Wednesday </label> <span> 15:00 - 02:30 </span></li>
+                        <li><label>Thursday </label> <span> 15:00 - 02:30 </span></li>
+                        <li><label>Friday </label> <span> 15:00 - 02:30 </span></li>
+                        <li><label>Saturday </label> <span> 15:00 - 02:30 </span></li>
+                        <li><label>Sunday </label> <span> 15:00 - 02:30 </span></li>
                     </ul>
+               
                 </div>
             </div>
         </div>
@@ -30,7 +44,39 @@
         <div class="StyleArea">
             <div class="StyleBox">
                 <div class="StyleLeft">
-                    <div class="Logo">
+
+                    <div class="StepBox">
+                        <h3>My Booking</h3>
+                        <ol>
+                            <li class="Complete">
+                                <span class="Circle"></span>
+                                <aside>
+                                    <h6>Women's Haircut</h6>
+                                    <p>Kr 350</p>
+                                    <p>60 Minutes</p>
+                                </aside>
+                                <aside>
+                                    <h6>Bread Trim & Shape</h6>
+                                    <p>Kr 350</p>
+                                    <p>60 Minutes</p>
+                                </aside>
+                            </li>
+                            <li class="Current">
+                                <span class="Circle"></span>
+                                <h6>Your Professional</h6>
+                            </li>
+                            <li>
+                                <span class="Circle"></span>
+                                <h6>Date & Time</h6>
+                            </li>
+                            <li>
+                                <span class="Circle"></span>
+                                <h6>Your Details</h6>
+                            </li> 
+                        </ol>
+                    </div>
+
+                    <!-- <div class="Logo">
                         <img src="images/Logo.png">
                     </div>
                     <ul>
@@ -42,17 +88,20 @@
                             <p>Kr 350</p>
                             <p>60 Minutes</p>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="StyleRight">
                     <div class="TitleBox">
+                        <a class="Back" href="step1.html">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i> Back
+                        </a>
                         <h3>Choose Your Professional</h3>
                         <p>Skip staff selection</p>
                     </div>
                     <div class="Professional">
                         <ul>
                             <li>
-                                <input type="radio" name="service">
+                                <input type="checkbox" name="service">
                                 <article>
                                     <span class="Icon"></span>
                                     <figure>
@@ -65,7 +114,7 @@
                                 </article>
                             </li>
                             <li>
-                                <input type="radio" name="service">
+                                <input type="checkbox" name="service">
                                 <article>
                                     <span class="Icon"></span>
                                     <figure>
@@ -78,7 +127,7 @@
                                 </article>
                             </li>
                             <li>
-                                <input type="radio" name="service">
+                                <input type="checkbox" name="service">
                                 <article>
                                     <span class="Icon"></span>
                                     <figure>
@@ -93,13 +142,20 @@
                         </ul>
                     </div>
                     <div class="ContinueBox">
-                        <button id="myButton">Continue</button>
+                        <button id="myButton">Continue & Skip</button>
 
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+        </ul>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>

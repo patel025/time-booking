@@ -1,44 +1,12 @@
 @media all and (max-width: 992px) {
     
-    .Header{ padding:10px 0 }
-    .Header .Navigation ul{ position: fixed; top: 0; left: 0; width: 320px; padding: 30px; box-sizing: border-box; background-color: #000; height: 100vh; transition: 0.5s all ease-in-out; transform: translate(-100%, 0px); } 
-    .Header .Navigation ul li{margin: 0 0 25px 0;display: block;}
-    .Header .Navigation ul.Show{ transform: translate(-0%, 0px); }
-    .MenuBox{ display:block; }
-    .CloseMenu{ display:block; }
 
-    .SlideArea{ background-position:center; }
-    .SlideArea .SlideBox{ width:100%; text-align:center; }
-
-    .AboutArea .col-sm-5,
-    .AboutArea .col-sm-7{flex: 0 0 100%; max-width: 100%;}
-    .AboutArea .AboutLeft{ margin-bottom:30px }
-
-    .OfferArea{ background-position:center; }
-    .GalleryArea .GalleryBody a{ width:50% }
-
-    .ContactArea .col-sm-3{flex: 0 0 50%; max-width: 50%;}
-    .ContactArea .ContactBox { margin-top:50px   }
 
 }
 
 @media all and (max-width: 600px) {
 
-    .SlideArea .SlideBox h1{ font-size:50px }
-    
-    .DishesArea .Disheshead p br{ display:none; }
-    
-    .AboutArea .AboutRight h2{ font-size:30px }
-    .AboutArea .AboutRight article{ flex-wrap:wrap; margin:0 }
-    .AboutArea .AboutRight article aside{ margin-top:50px }
-    
-    .OfferArea h2{ font-size:32px; line-height:45px }
-    .OfferArea h2 br{ display:none; }
-    
-    .GalleryArea { padding:100px 0 0 }
-    .GalleryArea .GalleryBody a{ width:100% }
-    
-    .ContactArea .col-sm-3{flex: 0 0 100%; max-width: 100%;}
+   
 
 
 }
