@@ -239,7 +239,7 @@ select{cursor: pointer;outline: 0;}
 .Personal h6{text-align:center;margin:20px 0 0 0;font-size:13px;color:#817d7d;letter-spacing:.4px}
 
 
-.Service{overflow:auto;padding: 0px 0px 15px 0px;}
+.Service{}
 .Service::-webkit-scrollbar {
   width: 7px;
   height: 8px;
@@ -254,7 +254,7 @@ select{cursor: pointer;outline: 0;}
   background: #c7c2c2;
   border-radius: 10px;
 }
-.Service ul{display:flex;gap: 15px;font-family:'Mulish';display: flex;width: max-content;}
+.Service ul{gap: 15px;font-family:'Mulish';display: grid;grid-template-columns: repeat(3,1fr);}
 .Service ul li{position:relative;width: 225px;}
 .Service ul li input{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;cursor:pointer;opacity:0}
 .Service ul li article{background-color:#fff;text-align:center;padding:30px 20px;border-radius:15px;/* box-shadow:0 0 10px #ddd; */border: 2px solid #e7e7e7;}
