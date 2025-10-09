@@ -116,37 +116,15 @@ p { margin: 0; padding: 0; }
 input[type=date].form-control{ text-transform: uppercase !important; }
 select{cursor: pointer;outline: 0;}
 
-.Header{background-color: #ffffff;padding: 15px 0;}
-.Header .HeaderBox{max-width:1000px;margin:auto;display:flex;justify-content:space-between;background-color: #fff;padding: 0;}
-.Header .HeaderBox .HeaderLeft{
-    display: flex;
-    width: 50%;
-}
-.Header .HeaderBox .HeaderLeft figure{
-    height: 95px;
-    overflow: hidden;
-    width: 150px;
-    border-radius: 10px;
-    border: 3px solid #fff;
-    box-shadow: 0px 0px 10px #8b8b8b;
-}
-.Header .HeaderBox .HeaderLeft figure img{
-    max-height: 110px;
-    width: 100%;
-    object-fit: cover;
-}
-.Header .HeaderBox .HeaderLeft figcaption{
-    padding: 0 0 0 20px;
-}
+.Header{background-color: #ffffff;padding: 15px;}
+.Header .HeaderBox{max-width:1200px;margin:auto;display:flex;justify-content:space-between;background-color: #fff;padding: 0;}
+.Header .HeaderBox .HeaderLeft{ display: flex; width: 50%;}
+.Header .HeaderBox .HeaderLeft figure{ height: 95px; overflow: hidden;  width: 150px; border-radius: 10px; border: 3px solid #fff; box-shadow: 0px 0px 10px #8b8b8b;}
+.Header .HeaderBox .HeaderLeft figure img{ max-height: 110px; width: 100%; object-fit: cover;}
+.Header .HeaderBox .HeaderLeft figcaption{ padding: 0 0 0 20px;}
 .Header .HeaderBox .HeaderLeft figcaption h3{color:#000;font-size: 22px;margin:0 0 10px 0;font-weight:800}
 .Header .HeaderBox .HeaderLeft figcaption p{display: block;margin: 0 0px 8px 0;font-size:15px;font-weight:600;color:#555}
-
-
-.Header .HeaderBox .HeaderRight{
-    width: 50%;
-    text-align: right;
-}
-
+.Header .HeaderBox .HeaderRight{ width: 50%; text-align: right;}
 .Header .HeaderBox .HeaderRight h4{text-align: left;font-size: 15px;color: #000;margin: 0 0 7px 0;}
 .Header .HeaderBox .HeaderRight ul{ display:flex; flex-wrap:wrap; }
 .Header .HeaderBox .HeaderRight ul li{font-size: 13px;display: inline-block;width: 50%;text-align: left;line-height: 24px;}
@@ -181,7 +159,7 @@ select{cursor: pointer;outline: 0;}
 .StyleArea{min-height:100vh;display:flex;/* align-items:center; */background:#f5f5f5;padding: 20px 20px;}
 .StyleArea .StyleBox{max-width: 1200px;margin: 0 auto;display:flex;gap:30px;width:100%}
 .StyleArea .StyleBox .StyleLeft{background-color:#f9f9f9;padding:25px;box-shadow:0 0 10px #dddcdc;width:35%;border-radius:10px;border:3px solid #fff}
-
+.StyleArea .StyleBox .StyleRight{background-color:#f1f1f1;padding:30px 30px 60px 30px;box-shadow:0 0 10px #d7d7d7;width:65%;border-radius:10px;border:3px solid #fff}
 
 .StepBox h3{font-family: "Roboto Slab", serif;text-transform: uppercase;font-size: 20px;font-weight: 800;color: #000;padding: 15px;margin: 0 0 20px 0;letter-spacing: 2px;text-align: center;background-color: #efefef;border-radius: 6px;border: 3px solid #fff;box-shadow: 0 0 10px #dddcdc;}
 .StepBox ol li{padding: 3px 0 15px 40px;position: relative;min-height: 85px;}
@@ -201,32 +179,6 @@ select{cursor: pointer;outline: 0;}
 .StepBox ol li h4 strong{ margin: 0 0 0 10px;font-weight: 700;}
 .StepBox ol li h4+h4{ margin-top:10px }
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-.StyleArea .StyleBox .StyleLeft .Logo{text-align:center;margin:0 0 25px 0}
-.StyleArea .StyleBox .StyleLeft .Logo img{max-width:150px}
-.StyleArea .StyleBox .StyleLeft .Profile{text-align:center;margin:25px 0 0 0}
-.StyleArea .StyleBox .StyleLeft .Profile figure{width: 100px;height: 100px;border: 3px solid #fff;border-radius:50%;box-shadow:0 0 10px #c5c1c1;margin: 0 auto 10px;}
-.StyleArea .StyleBox .StyleLeft .Profile figure img{width:100%}
-.StyleArea .StyleBox .StyleLeft .Profile h4{font-size:20px;color:#469bdb}
-.StyleArea .StyleBox .StyleLeft ul{border-bottom:1px solid #ddd}
-.StyleArea .StyleBox .StyleLeft ul li{border-top:1px solid #ddd;padding:15px 0}
-.StyleArea .StyleBox .StyleLeft ul li h6{font-size:16px;color:#000}
-.StyleArea .StyleBox .StyleLeft ul li p{font-size:13px;font-weight:700;color:#707070;letter-spacing:.3px;line-height:21px}
-
-*/
-.StyleArea .StyleBox .StyleRight{background-color:#f1f1f1;padding:30px 30px 60px 30px;box-shadow:0 0 10px #d7d7d7;width:65%;border-radius:10px;border:3px solid #fff}
-
 .TitleBox{margin:0 0 35px 0}
 .TitleBox .Back{font-size: 16px;float: right;color: #000;font-weight: 700;margin: 10px 0 0 0;}
 .TitleBox .Back i{margin-right: 5px;}
@@ -238,22 +190,6 @@ select{cursor: pointer;outline: 0;}
 .Personal button{background-color:#469bdb;padding:15px 0;color:#fff;font-size:16px;font-weight:600;border-radius:50px;display:block;border:none;width:250px;margin:auto;letter-spacing:.5px}
 .Personal h6{text-align:center;margin:20px 0 0 0;font-size:13px;color:#817d7d;letter-spacing:.4px}
 
-
-.Service{}
-.Service::-webkit-scrollbar {
-  width: 7px;
-  height: 8px;
-} 
- 
-.Service::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 20px;
-}
-   
-.Service::-webkit-scrollbar-thumb {
-  background: #c7c2c2;
-  border-radius: 10px;
-}
 .Service ul{gap: 15px;font-family:'Mulish';display: grid;grid-template-columns: repeat(3,1fr);}
 .Service ul li{position:relative;width: 225px;}
 .Service ul li input{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;cursor:pointer;opacity:0}
@@ -321,23 +257,7 @@ select{cursor: pointer;outline: 0;}
 .ContinueBox a:hover{ background-color:#469bdb; color:#fff }
 .ContinueBox h6{font-size:15px;margin:25px 0 0 0;color:#444;letter-spacing:.5px}
 
-footer{
-    padding: 20px 0;
-    background: #2e2e2e;
-}
-footer ul{
-    text-align: center;
-}
-footer ul li{
-    display: inline-block;
-    margin: 0 20px;
-}
-footer ul li a{
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-decoration: underline;
-}
-footer ul li a:hover{
-}
+footer{padding: 20px 0;background: #2e2e2e;}
+footer ul{text-align: center;}
+footer ul li{display: inline-block;margin: 0 20px;}
+footer ul li a{color: #fff;font-size: 14px;font-weight: 600;letter-spacing: 0.5px;text-decoration: underline;}

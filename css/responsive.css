@@ -1,12 +1,53 @@
-@media all and (max-width: 992px) {
-    
+@media screen and (max-width: 992px) and (min-width: 769px) {
 
+	.Service ul { grid-template-columns: repeat(2, 1fr); }
+	.Service ul li{ width:100% }
+	.Professional ul{ grid-template-columns: repeat(2, 1fr); display:grid;  }
+	.CalenderBox{ flex-wrap:wrap; }
+	.CalenderBox .CalenderLeft{ width:100% }
+	.CalenderBox .CalenderRight{ width:100% }
+	.CalenderBox .CalenderRight ul{  grid-template-columns: repeat(3, 1fr); }
 
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 768px) {
 
-   
+	.Header .HeaderBox{ flex-wrap:wrap; }
+	.Header .HeaderBox .HeaderLeft{ width:100%; margin-bottom:10px }
+	.Header .HeaderBox .HeaderRight{ width:100%; overflow:auto; }
+	.Header .HeaderBox .HeaderRight ul{ width: max-content; flex-wrap:nowrap; padding-bottom:10px }
+	.Header .HeaderBox .HeaderRight ul li+li{ margin-left:15px }
+	.Header .HeaderBox .HeaderRight ul li label{ display:block; }
+	.Header .HeaderBox .HeaderRight ul li label span{ display:block; }
 
+	.StyleArea .StyleBox{ flex-wrap:wrap;  }
+	.StyleArea .StyleBox .StyleLeft{ width:100% }
+	.StyleArea .StyleBox .StyleRight{ width:100% }
+	.Service ul { grid-template-columns: repeat(2, 1fr); }
+	.Service ul li{ width:100% }
+	.Professional ul{ grid-template-columns: repeat(3, 1fr); display:grid;  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px) { 
+	.StepBox ol{ display:flex; }
+	.StepBox ol li{ display: inline-block; padding: 35px 0 0 0; width: 100%;}
+	.StepBox ol li:before{ width: 100%; height: auto; top: 15px; left: 90px}
+	.StepBox ol li .Circle{ right:0; margin:auto; }
+	.StepBox ol li h6{ text-align:center; font-size:14px }
+	.StepBox ol li p{ text-align:center; }
+	.StepBox ol li h4{ font-size: 16px; padding: 5px;}
+    .StepBox ol li h4 span{ width: 30px; height: 30px;}
+}
+ 
+@media all and (max-width: 500px) {
+
+	.Service ul { grid-template-columns: repeat(1, 1fr); }
+	.Professional ul { grid-template-columns: repeat(1, 1fr);}
+	.TitleBox h3{ font-size:22px }
+	.TitleBox .Back { margin: 3px 0 0 0; }
+	.CalenderBox{ flex-wrap:wrap; }
+	.CalenderBox .CalenderLeft{ width:100% }
+	.CalenderBox .CalenderRight{ width:100% }
 
 }
